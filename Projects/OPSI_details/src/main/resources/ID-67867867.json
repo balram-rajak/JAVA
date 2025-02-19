@@ -1,0 +1,519 @@
+[ {
+  "uri" : "entities/LM7IA3u",
+  "type" : "configuration/entityTypes/OPSI",
+  "createdBy" : "strules",
+  "createdTime" : 1521643429002,
+  "updatedBy" : "apollo_integration_acct",
+  "updatedTime" : 1532782939877,
+  "attributes" : {
+    "ID" : [ {
+      "type" : "configuration/entityTypes/OPSI/attributes/ID",
+      "ov" : true,
+      "value" : "67867867",
+      "uri" : "entities/LM7IA3u/attributes/ID/bzomTCFG"
+    } ],
+    "Name" : [ {
+      "type" : "configuration/entityTypes/OPSI/attributes/Name",
+      "ov" : true,
+      "value" : "Darcl Logistics Limited",
+      "uri" : "entities/LM7IA3u/attributes/Name/bzomS638"
+    } ],
+    "OtherPartySite" : [ {
+      "label" : "Organization - India",
+      "value" : {
+        "OTR_PRTY_SITE_PTNR_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/OTR_PRTY_SITE_PTNR_IND",
+          "ov" : true,
+          "value" : "false",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_PTNR_IND/bzomSZsw"
+        } ],
+        "OTR_PRTY_SITE_CUST_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/OTR_PRTY_SITE_CUST_IND",
+          "ov" : true,
+          "value" : "false",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_CUST_IND/bzomSRMQ"
+        } ],
+        "OTR_PRTY_SITE_MDCP_DLT_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/OTR_PRTY_SITE_MDCP_DLT_IND",
+          "ov" : true,
+          "value" : "Active",
+          "lookupCode" : "N",
+          "lookupRawValue" : "N",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_MDCP_DLT_IND/bzomSe9C"
+        } ],
+        "OTR_PRTY_SITE_XTRN_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/OTR_PRTY_SITE_XTRN_IND",
+          "ov" : true,
+          "value" : "false",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_XTRN_IND/bzomSmfi"
+        } ],
+        "ORG_OUT_OF_BSN_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/ORG_OUT_OF_BSN_IND",
+          "ov" : true,
+          "value" : "true",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/ORG_OUT_OF_BSN_IND/bzomT7z0"
+        } ],
+        "OTR_PRTY_SITE_TYP_CD" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/OTR_PRTY_SITE_TYP_CD",
+          "ov" : true,
+          "value" : "Organization",
+          "lookupCode" : "ORG",
+          "lookupRawValue" : "ORG",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_TYP_CD/bzomT3ik"
+        } ],
+        "OTR_PRTY_SITE_LCTN_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/OTR_PRTY_SITE_LCTN_IND",
+          "ov" : true,
+          "value" : "true",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_LCTN_IND/bzomSiPS"
+        } ],
+        "ORG_BRNH_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/ORG_BRNH_IND",
+          "ov" : true,
+          "value" : "true",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/ORG_BRNH_IND/bzomSqvy"
+        } ],
+        "CTRY_CD" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/CTRY_CD",
+          "ov" : true,
+          "value" : "India",
+          "lookupCode" : "IN",
+          "lookupRawValue" : "IN",
+          "lookupAttributes" : [ {
+            "name" : "CTRY_CD",
+            "value" : "IN"
+          }, {
+            "name" : "MDCP_DLT_IND",
+            "value" : "N"
+          }, {
+            "name" : "CTRY_TEL_ACSS_CD",
+            "value" : "91"
+          }, {
+            "name" : "CTRY_DL_OUT_NR",
+            "value" : "0"
+          }, {
+            "name" : "XTRN_IND",
+            "value" : "Y"
+          }, {
+            "name" : "MDCP_OBJ_MNT_TS",
+            "value" : "15:42.0"
+          }, {
+            "name" : "NM",
+            "value" : "India"
+          }, {
+            "name" : "CTRY_ISO_3_CHR_UID",
+            "value" : "IND"
+          }, {
+            "name" : "CTRY_ISO_2_CHR_UID",
+            "value" : "IN"
+          }, {
+            "name" : "XCLSN_IND",
+            "value" : "N"
+          }, {
+            "name" : "EFF_TS",
+            "value" : "00:00.0"
+          }, {
+            "name" : "ID",
+            "value" : "106"
+          } ],
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/CTRY_CD/bzomSzSU"
+        } ],
+        "ID_OTR_PRTY_SITE" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/OtherPartySite/attributes/ID_OTR_PRTY_SITE",
+          "ov" : true,
+          "value" : "61488388",
+          "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/ID_OTR_PRTY_SITE/bzomSVcg"
+        } ]
+      },
+      "ov" : true,
+      "uri" : "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A"
+    } ],
+    "Address" : [ {
+      "label" : "Plot No 168 Korba",
+      "value" : {
+        "AddressLine1" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/AddressLine1",
+          "ov" : true,
+          "value" : "Plot No 168",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/AddressLine1/bzomRCdm"
+        } ],
+        "City" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/City",
+          "ov" : true,
+          "value" : "Korba",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/City/bzomQeXi"
+        } ],
+        "Country" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/Country",
+          "ov" : true,
+          "value" : "India",
+          "lookupCode" : "IN",
+          "lookupRawValue" : "IN",
+          "lookupAttributes" : [ {
+            "name" : "CTRY_CD",
+            "value" : "IN"
+          }, {
+            "name" : "MDCP_DLT_IND",
+            "value" : "N"
+          }, {
+            "name" : "CTRY_TEL_ACSS_CD",
+            "value" : "91"
+          }, {
+            "name" : "CTRY_DL_OUT_NR",
+            "value" : "0"
+          }, {
+            "name" : "XTRN_IND",
+            "value" : "Y"
+          }, {
+            "name" : "MDCP_OBJ_MNT_TS",
+            "value" : "15:42.0"
+          }, {
+            "name" : "NM",
+            "value" : "India"
+          }, {
+            "name" : "CTRY_ISO_3_CHR_UID",
+            "value" : "IND"
+          }, {
+            "name" : "CTRY_ISO_2_CHR_UID",
+            "value" : "IN"
+          }, {
+            "name" : "XCLSN_IND",
+            "value" : "N"
+          }, {
+            "name" : "EFF_TS",
+            "value" : "00:00.0"
+          }, {
+            "name" : "ID",
+            "value" : "106"
+          } ],
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/Country/bzomRPQY"
+        } ],
+        "AddressLine2" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/AddressLine2",
+          "ov" : true,
+          "value" : "Transport Nagar",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/AddressLine2/bzomR8NW"
+        } ],
+        "ID_ADDR_CTRY_LNG" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/ID_ADDR_CTRY_LNG",
+          "ov" : true,
+          "value" : "68254657",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/ID_ADDR_CTRY_LNG/bzomQvak"
+        } ],
+        "ROWID_CTRY_LNG" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/ROWID_CTRY_LNG",
+          "ov" : true,
+          "value" : "US-EN-LATN",
+          "lookupCode" : "42",
+          "lookupRawValue" : "42",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/ROWID_CTRY_LNG/bzomRLAI"
+        } ],
+        "ADDR_CTRY_LNG_VLDTN_STTS" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/ADDR_CTRY_LNG_VLDTN_STTS",
+          "ov" : true,
+          "value" : "Ambiguous",
+          "lookupCode" : "AMBIGUOUS",
+          "lookupRawValue" : "Ambiguous",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/ADDR_CTRY_LNG_VLDTN_STTS/pAAc57LN"
+        }, {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/ADDR_CTRY_LNG_VLDTN_STTS",
+          "ov" : false,
+          "value" : "Invalid",
+          "lookupCode" : "INVALID",
+          "lookupRawValue" : "INVALID",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/ADDR_CTRY_LNG_VLDTN_STTS/bzomQaHS"
+        } ],
+        "LNG_CTRY_CD" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/LNG_CTRY_CD",
+          "ov" : true,
+          "value" : "US",
+          "lookupCode" : "US",
+          "lookupRawValue" : "US",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/LNG_CTRY_CD/bzomRTgo"
+        } ],
+        "LNG_CD" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/LNG_CD",
+          "ov" : true,
+          "value" : "EN",
+          "lookupCode" : "EN",
+          "lookupRawValue" : "EN",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/LNG_CD/bzomQJEQ"
+        } ],
+        "AddressType" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/AddressType",
+          "ov" : true,
+          "value" : "Physical",
+          "lookupCode" : "PHYSICAL",
+          "lookupRawValue" : "PHYSICAL",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/AddressType/bzomRcDK"
+        } ],
+        "CTRY_SB_DVSN_LG_NM" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/CTRY_SB_DVSN_LG_NM",
+          "ov" : true,
+          "value" : "Chattisgarh",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/CTRY_SB_DVSN_LG_NM/bzomQW1C"
+        } ],
+        "PRMRY_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/PRMRY_IND",
+          "ov" : true,
+          "value" : "true",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/PRMRY_IND/bzomR47G"
+        } ],
+        "PRMRY_LTN_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/PRMRY_LTN_IND",
+          "ov" : true,
+          "value" : "true",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/PRMRY_LTN_IND/bzomRGu2"
+        } ],
+        "HASH_LG_CD" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/HASH_LG_CD",
+          "ov" : true,
+          "value" : "37562A3A2BE1E5984CCD146240120F77",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/HASH_LG_CD/bzomQEyA"
+        } ],
+        "MDCP_DLT_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/MDCP_DLT_IND",
+          "ov" : true,
+          "value" : "Active",
+          "lookupCode" : "N",
+          "lookupRawValue" : "N",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/MDCP_DLT_IND/bzomQn4E"
+        } ],
+        "CHR_SCRT_CD" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/CHR_SCRT_CD",
+          "ov" : true,
+          "value" : "Latin",
+          "lookupCode" : "LATN",
+          "lookupRawValue" : "LATN",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/CHR_SCRT_CD/bzomRgTa"
+        } ],
+        "ID_ADDR" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/ID_ADDR",
+          "ov" : true,
+          "value" : "47516670",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/ID_ADDR/bzomRXx4"
+        } ],
+        "LTTD_DGR_PSN" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/LTTD_DGR_PSN",
+          "ov" : true,
+          "value" : "0",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/LTTD_DGR_PSN/bzomQRkw"
+        } ],
+        "LGTD_DGR_PSN" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/Address/attributes/LGTD_DGR_PSN",
+          "ov" : true,
+          "value" : "0",
+          "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu/LGTD_DGR_PSN/bzomQNUg"
+        } ]
+      },
+      "ov" : true,
+      "uri" : "entities/LM7IA3u/attributes/Address/bzomQAhu"
+    } ],
+    "ORG_XTND_NM_IND" : [ {
+      "type" : "configuration/entityTypes/OPSI/attributes/ORG_XTND_NM_IND",
+      "ov" : true,
+      "value" : "true",
+      "uri" : "entities/LM7IA3u/attributes/ORG_XTND_NM_IND/bzomRkjq"
+    } ],
+    "ORG_LGL_NM_IND" : [ {
+      "type" : "configuration/entityTypes/OPSI/attributes/ORG_LGL_NM_IND",
+      "ov" : true,
+      "value" : "false",
+      "uri" : "entities/LM7IA3u/attributes/ORG_LGL_NM_IND/bzomRtGM"
+    } ],
+    "XTRN_IND" : [ {
+      "type" : "configuration/entityTypes/OPSI/attributes/XTRN_IND",
+      "ov" : true,
+      "value" : "false",
+      "uri" : "entities/LM7IA3u/attributes/XTRN_IND/bzomS1ms"
+    } ],
+    "MDCP_DLT_IND" : [ {
+      "type" : "configuration/entityTypes/OPSI/attributes/MDCP_DLT_IND",
+      "ov" : true,
+      "value" : "Active",
+      "lookupCode" : "N",
+      "lookupRawValue" : "N",
+      "uri" : "entities/LM7IA3u/attributes/MDCP_DLT_IND/bzomRxWc"
+    } ],
+    "STAlignment" : [ {
+      "label" : "423583 - DELHI ASSAM ROADWAYS CORPORATION LIMITED - IN",
+      "value" : {
+        "ID" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/ID",
+          "ov" : true,
+          "value" : "423583",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/ID/pAAX30pl"
+        } ],
+        "Name" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/Name",
+          "ov" : true,
+          "value" : "DELHI ASSAM ROADWAYS CORPORATION LIMITED - IN",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/Name/pAAX3Hsn"
+        } ],
+        "SLS_TTY_TYP_CD" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/SLS_TTY_TYP_CD",
+          "ov" : true,
+          "value" : "ACCOUNT",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/SLS_TTY_TYP_CD/pAAX3DcX"
+        } ],
+        "EFF_TS" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/EFF_TS",
+          "ov" : true,
+          "value" : "2013-05-01T00:00:00.000+0000",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/EFF_TS/pAAX2sJF"
+        } ],
+        "XPRY_TS" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/XPRY_TS",
+          "ov" : true,
+          "value" : "2016-10-31T00:00:00.000+0000",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/XPRY_TS/pAAX2wZV"
+        } ],
+        "MDCP_DLT_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/MDCP_DLT_IND",
+          "ov" : true,
+          "value" : "Inactive",
+          "lookupCode" : "Y",
+          "lookupRawValue" : "Y",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/MDCP_DLT_IND/pAAX39MH"
+        } ]
+      },
+      "ov" : true,
+      "uri" : "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z"
+    }, {
+      "label" : "601530574 - SMB Generic Account - IN",
+      "value" : {
+        "ID" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/ID",
+          "ov" : true,
+          "value" : "601530574",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u/ID/zUpFMmOA"
+        } ],
+        "Name" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/Name",
+          "ov" : true,
+          "value" : "SMB Generic Account - IN",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u/Name/zUpFMqeQ"
+        } ],
+        "EFF_TS" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/EFF_TS",
+          "ov" : true,
+          "value" : "2017-11-01T00:00:00.000+0000",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u/EFF_TS/zUpFMzAw"
+        } ],
+        "MDCP_DLT_IND" : [ {
+          "type" : "configuration/entityTypes/OPSI/attributes/STAlignment/attributes/MDCP_DLT_IND",
+          "ov" : true,
+          "value" : "Inactive",
+          "lookupCode" : "Y",
+          "lookupRawValue" : "Y",
+          "uri" : "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u/MDCP_DLT_IND/zUpFMuug"
+        } ]
+      },
+      "ov" : true,
+      "uri" : "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u"
+    } ],
+    "OrganizationName" : [ {
+      "label" : "100789595 Darcl Logistics Limited Partner -false Customer -false",
+      "relationshipLabel" : "",
+      "value" : {
+        "ID" : [ {
+          "type" : "configuration/entityTypes/Organizations/attributes/ID",
+          "ov" : true,
+          "value" : "100789595",
+          "uri" : "entities/LM7IA3u/attributes/OrganizationName/AzdTDqB/ID/INocMq0l"
+        } ],
+        "XTND_NM" : [ {
+          "type" : "configuration/entityTypes/Organizations/attributes/XTND_NM",
+          "ov" : true,
+          "value" : "Darcl Logistics Limited",
+          "uri" : "entities/LM7IA3u/attributes/OrganizationName/AzdTDqB/XTND_NM/INocK1GB"
+        } ],
+        "ORG_DUNS_UID" : [ {
+          "type" : "configuration/entityTypes/Organizations/attributes/ORG_DUNS_UID",
+          "ov" : true,
+          "value" : "918457461",
+          "uri" : "entities/LM7IA3u/attributes/OrganizationName/AzdTDqB/ORG_DUNS_UID/INocLo4t"
+        } ]
+      },
+      "ov" : true,
+      "uri" : "entities/LM7IA3u/attributes/OrganizationName/AzdTDqB",
+      "refEntity" : {
+        "type" : "configuration/entityTypes/Organizations",
+        "crosswalks" : [ {
+          "uri" : "entities/LM7IA3u/crosswalks/B9GBobf.INocfC1f",
+          "type" : "configuration/sources/DNB",
+          "value" : "ORG_918457461",
+          "createDate" : "2017-08-14T03:49:24.319Z",
+          "updateDate" : "2017-12-16T22:00:00.000Z",
+          "attributeURIs" : [ "entities/LM7IA3u/attributes/OrganizationName/AzdTDqB", "entities/LM7IA3u/attributes/OrganizationName/AzdTDqB/XTND_NM/INocK1GB", "entities/LM7IA3u/attributes/OrganizationName/AzdTDqB/ORG_DUNS_UID/INocLo4t", "entities/LM7IA3u/attributes/OrganizationName/AzdTDqB/ID/INocMq0l" ]
+        } ],
+        "objectURI" : "entities/B9GBobf"
+      },
+      "refRelation" : {
+        "type" : "configuration/relationTypes/OrgToOPSI",
+        "crosswalks" : [ {
+          "uri" : "entities/LM7IA3u/crosswalks/AzdTDqB.MM2Cymch",
+          "type" : "configuration/sources/MIGRATION",
+          "value" : "OrgToOPSI~ORG_918457461~OPSI_67867867",
+          "createDate" : "2017-09-07T05:53:03.075Z",
+          "updateDate" : "2017-09-07T05:53:03.075Z"
+        } ],
+        "startRefPinned" : false,
+        "endRefPinned" : false,
+        "startRefIgnored" : false,
+        "endRefIgnored" : false,
+        "objectURI" : "relations/AzdTDqB"
+      },
+      "startObjectCrosswalks" : [ {
+        "type" : "configuration/sources/DNB",
+        "value" : "ORG_918457461"
+      } ],
+      "endObjectCrosswalks" : [ {
+        "type" : "configuration/sources/MIGRATION",
+        "value" : "OPSI_67867867"
+      } ]
+    } ]
+  },
+  "isFavorite" : false,
+  "crosswalks" : [ {
+    "uri" : "entities/LM7IA3u/crosswalks/bzomTKlm",
+    "type" : "configuration/sources/MIGRATION",
+    "value" : "OPSI_67867867",
+    "reltioLoadDate" : "2018-07-28T13:02:19.877Z",
+    "createDate" : "2017-08-26T02:23:30.358Z",
+    "updateDate" : "2017-08-26T02:23:30.358Z",
+    "attributes" : [ "entities/LM7IA3u/attributes/Address/bzomQAhu/City/bzomQeXi", "entities/LM7IA3u/attributes/Address/bzomQAhu/LNG_CD/bzomQJEQ", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/ID_OTR_PRTY_SITE/bzomSVcg", "entities/LM7IA3u/attributes/ORG_LGL_NM_IND/bzomRtGM", "entities/LM7IA3u/attributes/Address/bzomQAhu/ID_ADDR/bzomRXx4", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_CUST_IND/bzomSRMQ", "entities/LM7IA3u/attributes/Address/bzomQAhu/HASH_LG_CD/bzomQEyA", "entities/LM7IA3u/attributes/Address/bzomQAhu/ADDR_CTRY_LNG_VLDTN_STTS/bzomQaHS", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_TYP_CD/bzomT3ik", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/ORG_BRNH_IND/bzomSqvy", "entities/LM7IA3u/attributes/Address/bzomQAhu/AddressLine1/bzomRCdm", "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/Name/pAAX3Hsn", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_XTRN_IND/bzomSmfi", "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/EFF_TS/pAAX2sJF", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_LCTN_IND/bzomSiPS", "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z", "entities/LM7IA3u/attributes/ID/bzomTCFG", "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/MDCP_DLT_IND/pAAX39MH", "entities/LM7IA3u/attributes/Address/bzomQAhu/LNG_CTRY_CD/bzomRTgo", "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/SLS_TTY_TYP_CD/pAAX3DcX", "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/XPRY_TS/pAAX2wZV", "entities/LM7IA3u/attributes/Address/bzomQAhu/AddressLine2/bzomR8NW", "entities/LM7IA3u/attributes/Address/bzomQAhu/ID_ADDR_CTRY_LNG/bzomQvak", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A", "entities/LM7IA3u/attributes/XTRN_IND/bzomS1ms", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/CTRY_CD/bzomSzSU", "entities/LM7IA3u/attributes/Address/bzomQAhu/ROWID_CTRY_LNG/bzomRLAI", "entities/LM7IA3u/attributes/Address/bzomQAhu/CHR_SCRT_CD/bzomRgTa", "entities/LM7IA3u/attributes/Name/bzomS638", "entities/LM7IA3u/attributes/Address/bzomQAhu/Country/bzomRPQY", "entities/LM7IA3u/attributes/Address/bzomQAhu", "entities/LM7IA3u/attributes/ORG_XTND_NM_IND/bzomRkjq", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_MDCP_DLT_IND/bzomSe9C", "entities/LM7IA3u/attributes/Address/bzomQAhu/AddressType/bzomRcDK", "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/ID/pAAX30pl", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/ORG_OUT_OF_BSN_IND/bzomT7z0", "entities/LM7IA3u/attributes/Address/bzomQAhu/PRMRY_IND/bzomR47G", "entities/LM7IA3u/attributes/Address/bzomQAhu/PRMRY_LTN_IND/bzomRGu2", "entities/LM7IA3u/attributes/MDCP_DLT_IND/bzomRxWc", "entities/LM7IA3u/attributes/Address/bzomQAhu/CTRY_SB_DVSN_LG_NM/bzomQW1C", "entities/LM7IA3u/attributes/Address/bzomQAhu/LTTD_DGR_PSN/bzomQRkw", "entities/LM7IA3u/attributes/OtherPartySite/bzomSN6A/OTR_PRTY_SITE_PTNR_IND/bzomSZsw", "entities/LM7IA3u/attributes/Address/bzomQAhu/LGTD_DGR_PSN/bzomQNUg", "entities/LM7IA3u/attributes/Address/bzomQAhu/MDCP_DLT_IND/bzomQn4E" ],
+    "singleAttributeUpdateDates" : {
+      "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/Name/pAAX3Hsn" : "2018-07-07T11:00:00.000Z",
+      "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/EFF_TS/pAAX2sJF" : "2018-07-07T11:00:00.000Z",
+      "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z" : "2018-07-07T11:00:00.000Z",
+      "entities/LM7IA3u/attributes/ID/bzomTCFG" : "2018-07-07T11:00:00.000Z",
+      "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/MDCP_DLT_IND/pAAX39MH" : "2018-07-07T11:00:00.000Z",
+      "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/SLS_TTY_TYP_CD/pAAX3DcX" : "2018-07-07T11:00:00.000Z",
+      "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/XPRY_TS/pAAX2wZV" : "2018-07-07T11:00:00.000Z",
+      "entities/LM7IA3u/attributes/STAlignment/pAAX2o2z/ID/pAAX30pl" : "2018-07-07T11:00:00.000Z"
+    }
+  }, {
+    "uri" : "entities/LM7IA3u/crosswalks/pAAc4qIL",
+    "type" : "configuration/sources/ReltioCleanser",
+    "value" : "LM7IA3u",
+    "reltioLoadDate" : "2018-07-28T13:02:19.877Z",
+    "createDate" : "2018-07-28T13:02:25.177Z",
+    "updateDate" : "2018-07-28T13:02:25.177Z",
+    "attributes" : [ "entities/LM7IA3u/attributes/Address/bzomQAhu", "entities/LM7IA3u/attributes/Address/bzomQAhu/ADDR_CTRY_LNG_VLDTN_STTS/pAAc57LN" ],
+    "singleAttributeUpdateDates" : { }
+  }, {
+    "uri" : "entities/LM7IA3u/crosswalks/zUpFN7hS",
+    "type" : "configuration/sources/HPMDM_ST",
+    "sourceTable" : "ST",
+    "value" : "67867867/601530574/1509494400000",
+    "reltioLoadDate" : "2018-03-21T14:43:49.002Z",
+    "createDate" : "2018-03-21T14:43:49.002Z",
+    "updateDate" : "2018-03-21T14:43:49.002Z",
+    "attributes" : [ "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u/MDCP_DLT_IND/zUpFMuug", "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u", "entities/LM7IA3u/attributes/ID/bzomTCFG", "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u/EFF_TS/zUpFMzAw", "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u/ID/zUpFMmOA", "entities/LM7IA3u/attributes/STAlignment/zUpFMi7u/Name/zUpFMqeQ" ],
+    "singleAttributeUpdateDates" : { }
+  } ],
+  "analyticsAttributes" : { },
+  "label" : "67867867 Darcl Logistics Limited",
+  "secondaryLabel" : "India Korba Plot No 168"
+} ]

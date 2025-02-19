@@ -1,0 +1,2 @@
+Last updated Mon Dec 12 18:07:02 IST 2022
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/employee_data
