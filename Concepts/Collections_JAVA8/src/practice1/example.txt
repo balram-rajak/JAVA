@@ -1,0 +1,29 @@
+
+W i p r o  
+0 1 2 3 4
+
+
+
+
+       Input : 1
+                  : 0,2,4 -> W, p, o
+                             w, P, O
+                                      -> wPo
+                  
+                  
+T e c h n o l O g Y 
+0 1 2 3 4 5 6 7 8 9
+                                
+       Input : 0 
+                  : 1, 3, 5, 7, 9
+                    e, h, o, O, Y   -> E, H, O, o, y
+                                    -> EHOoy
+                                    
+                                    
+CHEnnAi
+      
+      7 
+       
+ String s=   s[7] , s[6]      
+       Input : 2 
+                  : iAnnEHC -> IaNNehc 
