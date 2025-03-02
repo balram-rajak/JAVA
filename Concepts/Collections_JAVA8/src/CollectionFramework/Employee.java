@@ -1,4 +1,4 @@
-package rough_work;
+package CollectionFramework;
 
 public class Employee implements Comparable{
 
