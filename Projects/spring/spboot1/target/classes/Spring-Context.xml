@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:component-scan base-package="com.springproject1.project1"/>
+
+<context:component-scan base-package="com.springproject.xml"/>
+
+
+
+ 
+ <!-- The Scope class -->
+ 
+ 
+ 
+ <bean id="EmployeeDao" class="com.springproject1.project1.scope.EmployeeDao">
+   <property name="Jdbcconnection" ref="Jdbcconnection"/>
+    <!-- collaborators and configuration for this bean go here -->
+  </bean>
+
+  <bean id="Jdbcconnection" class="com.springproject1.project1.scope.Jdbcconnection"/>
+  
+  
+  <!-- Cdi package -->
+  
+
+  
+    <!-- collaborators and configuration for this bean go here -->
+  
+
+  <!-- more bean definitions go here -->
+
+</beans>
