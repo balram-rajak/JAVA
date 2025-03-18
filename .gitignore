@@ -30,3 +30,4 @@ replay_pid*
 
 .vscode/
 */.settings/*
+target/*
