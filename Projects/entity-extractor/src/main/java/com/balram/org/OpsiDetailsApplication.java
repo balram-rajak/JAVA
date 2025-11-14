@@ -1,5 +1,18 @@
 package com.balram.org;
 
+/**
+ * Spring Boot application to extract entity details from Reltio MDM using configurable API URLs.
+ * Enhanced version of OPSI fetcher with parameterized API endpoints.
+ * 
+ * Workflow:
+ * 1. Authenticates with Reltio OAuth API to get access token
+ * 2. Reads multiple entity IDs from application.properties
+ * 3. Fetches entity details using configurable API URL pattern
+ * 4. Saves each entity response as a formatted JSON file
+ * 
+ * @author Balram Rajak
+ */
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

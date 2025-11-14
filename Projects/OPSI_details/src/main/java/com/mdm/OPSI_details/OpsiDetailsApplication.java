@@ -34,25 +34,52 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
 
+/**
+ * Spring Boot application to fetch OPSI (Organization, Party, Site, Individual) entity details from Reltio MDM.
+ * Uses functional programming approach with Java 8 functional interfaces.
+ * 
+ * Workflow:
+ * 1. Authenticates with Reltio OAuth API to get access token
+ * 2. Reads multiple OPSI IDs from application.properties
+ * 3. Fetches OPSI details for each ID from Reltio MDM API
+ * 4. Saves each OPSI response as a formatted JSON file
+ * 
+ * @author Balram Rajak
+ */
 @SpringBootApplication
 public class OpsiDetailsApplication {
 	
+	/** Current OPSI ID being processed */
 	private static String OpsiId=null;
 	
+	/** Spring environment for accessing configuration properties */
 	@Autowired
 	private Environment environment;
 	
+	/** SLF4J logger instance */
 	static final Logger log=LoggerFactory.getLogger(OpsiDetailsApplication.class);
 	
-	// getting credentials from spring environment
+	/**
+	 * Functional interface to extract credentials from Spring environment.
+	 * Formats: "username:password"
+	 */
 	private static final Function<Environment, String> getCredentials=t -> 
 		t.getProperty("reltio.uname")+":"+t.getProperty("reltio.pass");
 
-		// to encode credentials with Base64
+	/**
+	 * Functional interface to encode credentials using Base64.
+	 * Required for Basic Authentication header.
+	 */
 	private static UnaryOperator<String> getEncodedCredentials=t -> 
 	new String(Base64.encodeBase64String(t.getBytes()));
 	
-	//method to get the http header for token request
+	/**
+	 * Creates HTTP headers for OAuth token request.
+	 * Sets Basic Authentication with encoded credentials.
+	 * 
+	 * @param encoded Base64 encoded credentials
+	 * @return HttpHeaders configured for token request
+	 */
 	private static Function<String, HttpHeaders> getTokenAuthorisationHeaders=t -> { 
 		HttpHeaders header=new HttpHeaders();
 		
@@ -64,7 +91,13 @@ public class OpsiDetailsApplication {
 		return header;
 	};
 	
-	//method to get the token http entity
+	/**
+	 * Creates HTTP entity for token request with form-encoded body.
+	 * Body contains grant_type=client_credentials for OAuth 2.0.
+	 * 
+	 * @param headers HTTP headers with authentication
+	 * @return HttpEntity ready for token request
+	 */
 	private static Function<HttpHeaders, HttpEntity<?>> getTokenRequest=t -> {
 		
 		  MultiValueMap<String, String> body = new LinkedMultiValueMap<String,
@@ -74,7 +107,13 @@ public class OpsiDetailsApplication {
 		return httpEntity;
 	};
 	
-	//method to get response token
+	/**
+	 * Calls Reltio OAuth API to retrieve authentication token.
+	 * 
+	 * @param httpEntity Request entity with credentials
+	 * @param restTemplate Spring RestTemplate instance
+	 * @return ResponseEntity containing Token object
+	 */
 	static private BiFunction<HttpEntity<?>, RestTemplate,ResponseEntity<Token>> getToken= (t,restTemplate) ->{
 		
 		return restTemplate.exchange("https://auth.reltio.com/oauth/token",
@@ -82,7 +121,13 @@ public class OpsiDetailsApplication {
 		
 	};
 	
-	//Method to get set authorization token into opsi request header
+	/**
+	 * Creates HTTP headers for OPSI details request.
+	 * Sets Bearer token for API authorization.
+	 * 
+	 * @param token OAuth access token
+	 * @return HttpHeaders configured with Bearer token
+	 */
 	private static Function<String, HttpHeaders> getOpsiAuthorisationHeader=t -> {
 		
 		HttpHeaders header=new HttpHeaders();
@@ -92,15 +137,27 @@ public class OpsiDetailsApplication {
 		
 	};
 	
-	// method to get get http entity for Opsi request
+	/**
+	 * Creates HTTP entity for OPSI details request.
+	 * 
+	 * @param headers HTTP headers with Bearer token
+	 * @return HttpEntity for OPSI request
+	 */
 	static private Function<HttpHeaders, HttpEntity<?>> getOpsiRequest=t -> {
 		
 		HttpEntity<?> httpEntity=new HttpEntity<Object>(t);
 		return httpEntity;
 	};
 	
-	//method to get Opsi details as response
-static private BiFunction<HttpEntity<?>, RestTemplate,ResponseEntity<String>> getOpsiDetails= (t,OpsiTemplate) ->{
+	/**
+	 * Fetches OPSI entity details from Reltio MDM API.
+	 * Filters entities by type and ID.
+	 * 
+	 * @param httpEntity Request entity with authorization
+	 * @param restTemplate Spring RestTemplate instance
+	 * @return ResponseEntity containing OPSI details as JSON string
+	 */
+	static private BiFunction<HttpEntity<?>, RestTemplate,ResponseEntity<String>> getOpsiDetails= (t,OpsiTemplate) ->{
 		
 	  return OpsiTemplate.exchange(
 	  "https://test.reltio.com/reltio/api/287t46vb8oiudXlt/entities?filter=" +
@@ -109,12 +166,25 @@ static private BiFunction<HttpEntity<?>, RestTemplate,ResponseEntity<String>> ge
 
 	};
 	
-	// getting code from Authentication token response body
+	/**
+	 * Extracts access token string from token response.
+	 */
 	static private Function<ResponseEntity<Token>, String> getTokenCode=t -> 
 	t.getBody().getAccess_token();
 	
+	/**
+	 * Predicate to check if OPSI ID exists in configuration.
+	 */
 	static private Predicate<String> checkIdExists=t -> t!=null;
 	
+	/**
+	 * Saves OPSI response to a JSON file with pretty printing.
+	 * File is named using pattern: ID-{opsiId}.json
+	 * 
+	 * @param environment Spring environment (unused but kept for signature)
+	 * @param opsiResponseEntity Response containing OPSI data
+	 * @return true if save successful, false otherwise
+	 */
 	static BiPredicate<Environment, ResponseEntity<String>> saveOpsiToFile = (t, opsiResponseEntity) -> {
 			
 		String opsiFileName=String.format("/Users/rakesh/eclipse-workspace/OPSI_details/src/main/resources/ID-%s.json", 
