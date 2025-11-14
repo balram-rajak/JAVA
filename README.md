@@ -46,8 +46,8 @@ This repository is a **comprehensive learning resource** for Java developers at 
 ```
 JAVA/
 ├── 📂 Projects/                    # Production-ready applications
-│   ├── Loginportal/               # JavaEE web application with MySQL
-│   ├── employee_record_pr1/       # Java 8 functional programming demo
+│   ├── Loginportal/               # JavaEE Full-Stack web application with MySQL
+│   ├── Employee Record Management/       # Java 8 functional programming demo
 │   ├── OPSI_details/              # Reltio MDM integration
 │   ├── entity-extractor/          # Configurable entity extractor
 │   └── Modular_partner-change-validator/  # AWS SQS microservice
@@ -75,8 +75,8 @@ JAVA/
 
 | Project | Type | Tech Stack | Complexity | Description |
 |---------|------|------------|------------|-------------|
-| **[Loginportal](Projects/Loginportal/)** | Web App | JavaEE, Servlets, JSP, MySQL | ⭐⭐ Intermediate | Employee authentication portal with database integration |
-| **[employee_record_pr1](Projects/employee_record_pr1/)** | Console App | Java 8, Predicates, Streams | ⭐ Beginner | Functional programming with employee filtering |
+| **[Loginportal](Projects/Loginportal/)** | Full-Stack Web App | JavaEE, Servlets, JSP, MySQL | ⭐⭐ Intermediate | Employee authentication portal with database integration |
+| **[Employee Record Management](<Projects/Employee Record Management/>)** | Console App | Java 8, Predicates, Streams | ⭐ Beginner | Functional programming with employee filtering |
 | **[OPSI_details](Projects/OPSI_details/)** | CLI | Spring Boot, OAuth 2.0, REST | ⭐⭐⭐ Advanced | Reltio MDM API integration for entity extraction |
 | **[entity-extractor](Projects/entity-extractor/)** | CLI | Spring Boot, REST, Config | ⭐⭐⭐ Advanced | Configurable entity extraction from Reltio MDM |
 | **[Modular_partner-change-validator](Projects/Modular_partner-change-validator/)** | Microservice | Spring Boot, AWS SQS, SQL Server | ⭐⭐⭐⭐ Expert | Multi-module message processing service |
@@ -96,7 +96,7 @@ A complete employee login portal demonstrating:
 
 ---
 
-### 2. 👥 employee_record_pr1
+### 2. 👥 Employee Record Management
 **Java 8 Functional Programming Demo**
 
 Showcases modern Java features:
@@ -107,7 +107,7 @@ Showcases modern Java features:
 
 **Tech**: Java 8+, Predicates, Streams, Lambdas
 
-[📖 Full Documentation](Projects/employee_record_pr1/README.md)
+[📖 Full Documentation](<Projects/Employee Record Management/README.md>)
 
 ---
 
@@ -275,7 +275,7 @@ cd JAVA
 ls -la
 
 # Build a project
-cd Projects/employee_record_pr1/src
+cd Projects/Employee\ Record\ Management/src
 javac com/*.java functionality/*.java
 java com.Employee_data
 
@@ -298,7 +298,7 @@ java -jar target/OPSI_details-0.0.1-SNAPSHOT.jar
 **Start Here:**
 1. 📁 `Concepts/Strings/` - String basics
 2. 📁 `Concepts/exception/` - Error handling
-3. 📁 `Projects/employee_record_pr1/` - Simple console app
+3. 📁 `Projects/Employee Record Management/` - Simple console app
 4. 📁 `Concepts/Collections_JAVA8/Collection Framework/` - Core collections
 
 **Learning Path:**

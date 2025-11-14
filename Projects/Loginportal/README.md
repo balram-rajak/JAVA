@@ -2,7 +2,7 @@
 
 ## 📋 Project Overview
 
-A Java-based web application implementing an employee login portal using **Servlets**, **JSP**, **JDBC**, and **MySQL**. This project demonstrates core JavaEE concepts including database connectivity, session management, and MVC-like architecture for user authentication.
+A Java **Full-Stack** web application implementing an employee login portal using **Servlets**, **JSP**, **JDBC**, and **MySQL**. This project demonstrates core JavaEE concepts including database connectivity, session management, and MVC-like architecture for user authentication.
 
 ## 💡 Concept & Purpose
 
