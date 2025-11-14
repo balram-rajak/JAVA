@@ -8,14 +8,34 @@ import java.util.HashMap;
 import com.Logger;
 import com.Mysql_Properties;
 
+/**
+ * Validator class for user authentication.
+ * Validates user credentials against the MySQL database.
+ * 
+ * @author Balram Rajak
+ */
 public class Validator extends LoginPortal {
 
+	/** Username for authentication */
 	private String uname;
+	
+	/** Authentication status flag: +1=success, 0=wrong password, -1=user not found, -2=SQL error */
 	private int flag = 0;
+	
+	/** Query operation handler */
 	Operation op = new Query();
+	
+	/** MySQL properties configuration */
 	Mysql_Properties o = (Mysql_Properties) op.get_db();
+	
+	/** Temporary storage for credentials */
 	private HashMap<String, String> m = new HashMap<String, String>();
 
+	/**
+	 * Fetches password from database for the given username.
+	 * 
+	 * @return Password string or null if user not found
+	 */
 	private String fetch_data() {
 
 		String result = null;
@@ -42,6 +62,13 @@ public class Validator extends LoginPortal {
 		return result;
 	}
 
+	/**
+	 * Validates user login credentials.
+	 * 
+	 * @param uname Username
+	 * @param pass Password
+	 * @return Authentication status: +1=success, 0=wrong password, -1=user not found, -2=SQL error
+	 */
 	public int Login(String uname, String pass) {
 		set_credentials(uname, pass);
 		check(fetch_data()); // in case the resultset is empty return -1
@@ -49,11 +76,22 @@ public class Validator extends LoginPortal {
 		return flag;
 	}
 
+	/**
+	 * Stores user credentials for validation.
+	 * 
+	 * @param uname Username
+	 * @param pass Password
+	 */
 	private void set_credentials(String uname, String pass) {
 		m.put(uname, pass);
 		this.uname = uname;
 	}
 
+	/**
+	 * Checks if the provided password matches the database password.
+	 * 
+	 * @param value Password from database
+	 */
 	private void check(String value) {
 
 		if (value != null) {
