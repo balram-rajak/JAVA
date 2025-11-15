@@ -1,8 +1,17 @@
 package com.mdm.OPSI_details;
 
+/**
+ * POJO class to hold OAuth 2.0 authentication token details.
+ * Maps the JSON response from the Reltio authentication API.
+ * 
+ * @author Balram Rajak
+ */
 public class Token {
 
+	/** OAuth 2.0 access token string */
 	private String access_token;
+	
+	/** Token type (typically "Bearer") */
 	private String token_type;
 	public String getAccess_token() {
 		return access_token;

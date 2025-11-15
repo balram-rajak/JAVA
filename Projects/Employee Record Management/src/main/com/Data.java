@@ -2,6 +2,13 @@ package com;
 
 import java.util.Objects;
 
+/**
+ * Data model class representing an employee's information.
+ * This class encapsulates employee details including personal information,
+ * department, designation, and salary components.
+ * 
+ * @author Balram Rajak
+ */
 public class Data {
 	
 	@Override
@@ -25,17 +32,41 @@ public class Data {
 				&& emp_no == other.emp_no && salary == other.salary;
 	}
 
+	/** Employee number - unique identifier */
 	private int emp_no;
+	
+	/** Employee name */
 	private String emp_name;
 
+	/** Designation code - single character code representing job role */
 	private String designationcode;
+	
+	/** Department name where employee works */
 	private String department;
+	
+	/** Basic salary component */
 	private int basicSalary;
+	
+	/** Dearness Allowance - calculated based on designation */
 	private int da;
+	
+	/** Total salary (basicSalary + da) */
 	private int salary;
+	
+	/** Full designation/job title */
 	private String designation;
 
-public Data(int emp_no, String emp_name, String designationcode, String department, int basicSalary) {
+	/**
+	 * Constructor to create an employee data object.
+	 * Automatically calculates DA and total salary based on designation code.
+	 * 
+	 * @param emp_no Employee number
+	 * @param emp_name Employee name
+	 * @param designationcode Single character code for designation (e, c, k, r, m)
+	 * @param department Department name
+	 * @param basicSalary Basic salary amount
+	 */
+	public Data(int emp_no, String emp_name, String designationcode, String department, int basicSalary) {
 		super();
 		
 		this.emp_no = emp_no;
@@ -77,6 +108,12 @@ public String getDesignation() {
 }
 
 
+	/**
+	 * Calculates Dearness Allowance (DA) and sets designation based on designation code.
+	 * DA amounts: Engineer(20k), Consultant(32k), Clerk(12k), Receptionist(12k), Manager(40k)
+	 * 
+	 * @param designationcode Single character designation code
+	 */
 	private void DA(String designationcode) {
 		
 		
